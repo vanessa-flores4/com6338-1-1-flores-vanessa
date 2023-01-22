@@ -16,15 +16,13 @@ function greet(){
     console.log(birthdayYet);
     
     var currentYear = new Date().getFullYear();
-    var birthYear = currentYear() - age;
-    var birthYearPlusOne = currentYear() - age + 1;
+    var birthYear = currentYear - age;
+    var birthYearPlusOne = currentYear - (age + 1);
 
     if (birthdayYet) {
-        alert (birthYear);
+        alert ("You were born in " + birthYear);
     } else {
-        alert (birthYearPlusOne);
+        alert ("You were born in " + birthYearPlusOne);
     }
-
-
 }
 
